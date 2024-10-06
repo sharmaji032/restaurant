@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restaurant</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="component/favicon.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!-- spinner/loader -->
+    <!-- <div class="spinner">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <div>Loading...</div>
+    </div> -->
+
+    <!-- nav bar with hero image -->
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand"><a href="index.html" style="text-decoration: none; color: azure; ">Restaurant</a></div>
+            <nav class="nav">
+                <div class="nav-mobile"><a id="nav-toggle"><span></span></a></div>
+                <ul class="nav-list">
+                    <li><a href="index.html" style="color: aquamarine;">HOME</a></li>
+                    <li><a href="about-us.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+
+
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">SIGN IN</a></li>
+
+                    <li><a href="https://form.jotform.com/242713579193464">BOOK A TABLE</a></li>
+                </ul>
+        </div>
+        </nav>
+        </div>
+    </section>
+    <!-- hero section with background image -->
+    <div class="carousel-inner"
+        style="background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(img/bg-hero.jpg); ">
+        <div class="carousel-item active" style="height: 800px; ">
+            <!-- <img src="img/bg-hero.jpg" class="d-block w-100 " alt="..."> -->
+            <div class="col-lg-6 text-center text-lg-start" style="padding-top:200px">
+                <h1 class="display-6 text-white animated slideInLeft" id="enjoy">Enjoy Our<br>Delicious Meal</h1>
+                <p class="text-white animated slideInLeft mb-4 pb-2" id="temp">Tempor erat elitr rebum at clita. Diam
+                    dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                    stet lorem sit clita duo justo magna dolore erat amet</p>
+                <a href="https://form.jotform.com/242713579193464"
+                    class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A
+                    Table</a>
+            </div>
+            <div class="col-lg-6 text-center text-lg-end " id="rotate">
+                <img class="img-fluid" src="img/hero.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                            <h5>Master Chefs</h5>
+                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                            <h5>Quality Food</h5>
+                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                            <h5>Online Order</h5>
+                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                            <h5>24/7 Service</h5>
+                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-9fe205d0-9ee5-42d1-89ce-4f6ea7cac2be" data-elfsight-app-lazy></div>
+    <!-- Service End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s"
+                                src="img/download.jpeg">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s"
+                                src="img/beacon_restaurants-2.jpg" style="margin-top: 25%;">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s"
+                                src="img/4ad20-pune-restaurants.webp">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s"
+                                src="img/fun-family-restaurants-in-dubai-header.avif">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                    <h1 class="mb-4">Welcome to My <b>Restaurant</b> </h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
+                        diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
+                        diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
+                        dolore erat amet</p>
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15
+                                </h1>
+                                <div class="ps-4">
+                                    <p class="mb-0">Years of</p>
+                                    <h6 class="text-uppercase mb-0">Experience</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50
+                                </h1>
+                                <div class="ps-4">
+                                    <p class="mb-0">Popular</p>
+                                    <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="about-us.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <!-- Menu items-->
+    <section class="menu_list mt-60 mb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-title text-center mb-60">
+                        <p>Famous for good food</p>
+                        <h4>our menu</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-tabs menu_tab" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active show" id="breakfast-tab" data-toggle="tab" href="#breakfast"
+                            role="tab" aria-selected="true">Breakfast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab"
+                            aria-selected="false">Lunch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="dinner-tab" data-toggle="tab" href="#dinner" role="tab"
+                            aria-selected="false">Dinner</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="tab-content col-xl-12" id="myTabContent">
+                    <div class="tab-pane fade active show" id="breakfast" role="tabpanel"
+                        aria-labelledby="breakfast-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single_menu_list">
+                                    <img src="img/360_F_115620221_5XL4MzVoXrHGJdhHXrVVNL0WUHdJLCPH.jpg"" alt="">
+                                    <div class=" menu_content">
+                                    <h4>Idli-Sambar<span>₹50</span></h4>
+                                    <p>Soft steamed rice cakes served with a lentil-based vegetable stew and coconut
+                                        chutney.</p>
+                                </div>
+                            </div>
+
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\istockphoto-1257020044-612x612.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Dhokla <span>₹60</span></h4>
+                                    <p>Steamed fermented rice and chickpea cake, spongy and light, usually served with
+                                        green chutney.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="img/istockphoto-1279134709-1024x1024.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Aloo Paratha <span>₹60</span></h4>
+                                    <p>Whole wheat flatbread stuffed with spiced mashed potatoes, served with curd
+                                        and pickle.</p>
+                                </div>
+                            </div>
+
+                            <div class="single_menu_list">
+                                <img src="img/istockphoto-501425188-612x612.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Poha <span>₹40</span></h4>
+                                    <p>Flattened rice cooked with onions, mustard seeds, and turmeric, garnished
+                                        with coriander.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="img/cone-shape-masala-dosa-is-south-indian-meal-served-with-sambhar-coconut-chutney_1174497-38834.avif"
+                                    alt="">
+                                <div class="menu_content">
+                                    <h4>Dosa<span>₹70</span></h4>
+                                    <p>Crispy fermented rice crepe, typically served with sambar and coconut
+                                        chutney.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\depositphotos_464969466-stock-photo-upma-made-samolina-rava-upma.jpg"
+                                    alt="">
+                                <div class="menu_content">
+                                    <h4>Upma<span>₹50</span></h4>
+                                    <p>Semolina cooked with vegetables, mustard seeds, and curry leaves, lightly
+                                        spiced.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\pexels-aditya-mara-425995080-17433353.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Vada Pav<span>₹30</span></h4>
+                                    <p>Spicy potato fritter sandwiched in a pav bun with chutneys.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\depositphotos_114900552-stock-photo-cooked-red-kidney-beans-curry.jpg"
+                                    alt="">
+                                <div class="menu_content">
+                                    <h4>Rajma Chawal <span>₹50</span></h4>
+                                    <p>A comforting dish of red kidney beans cooked in a spicy tomato gravy, served with
+                                        steamed rice.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\360_F_584682773_WiNj3mhbOmt6c4RyvQXI37r8F8Tzrckx.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Paneer Butter Masala<span>₹150</span></h4>
+                                    <p>Cottage cheese cubes in a rich tomato-based gravy with butter and cream.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\depositphotos_114900552-stock-photo-cooked-red-kidney-beans-curry.jpg"
+                                    alt="">
+                                <div class="menu_content">
+                                    <h4>Rajma Chawal <span>₹120</span></h4>
+                                    <p>Red kidney beans cooked in a spicy tomato gravy, served with steamed rice.</p>
+                                </div>
+                            </div>
+
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\dal-makhani-dal-makhni-is-north-indian-recipe-served-bowl-selective-focus_466689-79107.avif"
+                                    alt="">
+                                <div class="menu_content">
+                                    <h4>Dal Makhani <span>₹130</span></h4>
+                                    <p> Creamy black lentils cooked with butter, served with naan or rice.</p>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\689d14b0-f226-11ec-9349-6147d49af965.png" alt="">
+                                <div class="menu_content">
+                                    <h4>Butter Naan <span>₹30 per piece</span></h4>
+                                    <p>Soft, fluffy naan brushed with butter, perfect for gravies.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\roomali-roti-recipe-main-photo.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Roomali Roti <span>₹25 per piece</span></h4>
+                                    <p>Ultra-thin, soft flatbread, ideal for wraps or alongside curry.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\istockphoto-1155185428-612x612.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Pav Bhaji<span>₹100</span></h4>
+                                    <p>Mashed spiced vegetables served with buttered pav bread.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\Palak-Paneer-Recipe.webp" alt="">
+                                <div class="menu_content">
+                                    <h4>Palak Paneer <span>₹140</span></h4>
+                                    <p>Cottage cheese cubes in a smooth spinach gravy, mildly spiced.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\aloo-gobi-indian-dish_98908-2054.avif" alt="">
+                                <div class="menu_content">
+                                    <h4>Aloo Gobi <span>₹90</span></h4>
+                                    <p>Potatoes and cauliflower stir-fried with Indian spices.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\istockphoto-1296798642-612x612.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Tandoori Roti <span>₹15 per piece</span></h4>
+                                    <p>Soft, whole wheat flatbread cooked in a clay tandoor oven.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\Homemade-Lachha-Paratha-3.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Lachha Paratha<span>₹40 per piece</span></h4>
+                                    <p>Multi-layered whole wheat paratha, crispy and flaky.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\Kadhai_Paneer_011.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Kadhai Paneer<span>₹150</span></h4>
+                                    <p>Stir-fried cottage cheese with bell peppers and onions in a spicy tomato sauce.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\image1-2-1024x684.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Malai Kofta <span>₹160</span></h4>
+                                    <p>Fried vegetable dumplings in a creamy tomato gravy.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\istockphoto-823045790-612x612.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Bhindi Masala<span>₹80</span></h4>
+                                    <p>Stir-fried okra with onions and Indian spices.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\cumin-rice-jeera-rice-is-popular-indian-main-course-item-made-using-basmati-rice-with-basic-spices_466689-2520.avif"
+                                    alt="">
+                                <div class="menu_content">
+                                    <h4>Jeera Rice<span>₹90</span></h4>
+                                    <p>Basmati rice sautéed with cumin seeds, perfect with gravies.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\360_F_903438372_v02yPRR8CLpEYAe1iQ7OMoTPLVP3NlX5.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Shahi Paneer<span>₹150</span></h4>
+                                    <p>Cottage cheese cooked in a rich, creamy cashew and tomato gravy.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\aloo-matar-in-copper-pot-1024x576.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Aloo Matar<span>₹100</span></h4>
+                                    <p>Potatoes and peas cooked in a spiced onion and tomato gravy.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\kadi-pakora-1-scaled.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Kadhi Pakora<span>₹110</span></h4>
+                                    <p>Spiced yogurt-based curry with gram flour fritters, served with rice.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="D:\rest\img\istockphoto-1292629539-612x612.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Paneer Tikka Masala<span>₹160</span></h4>
+                                    <p>Marinated paneer grilled and cooked in a tangy tomato-based gravy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 text-center">
+                <div class="mybox">
+                    <a href="menu.html">view more</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--          -->
+
+    <center>
+        <h3 class="ordermessage">If you want to order some specific food items Please send message</h3>
+    </center>
+    <div class="mycontainer">
+        <form action="">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="lname">Table No.</label>
+            <input type="text" id="lname" name="lastname" placeholder="Please enter your table number..">
+            <br>
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject"
+                placeholder="Write specific food items and if you want add or remove some items according to your preference .."
+                style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <!-- Team Members -->
+    <div class="container-xxl pt-5 pb-3">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
+                <h1 class="mb-5">Our Master Chefs</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-9">
+                            <img class="img-fluid"
+                                src="https://img.freepik.com/premium-photo/photo-young-female-chef-with-smile-face-generative-ai_911330-1686.jpg"
+                                alt="">
+                        </div>
+                        <h5 class="mb-0 p-3">Full Name</h5>
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-8">
+                            <img class="img-fluid"
+                                src="https://imgcdn.stablediffusionweb.com/2024/3/19/9c76d415-9ee1-43d7-a03b-6577f3c36ff0.jpg"
+                                alt="">
+                        </div>
+                        <h5 class="mb-0 p-3">Full Name</h5>
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-8">
+                            <img class="img-fluid"
+                                src="https://img.freepik.com/premium-photo/photo-young-female-chef-with-smile-face-generative-ai_911330-1687.jpg"
+                                alt="">
+                        </div>
+                        <h5 class="mb-0 p-3">Full Name</h5>
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <div class="rounded-circle overflow-hidden m-8">
+                            <img class="img-fluid"
+                                src="https://img.freepik.com/premium-photo/indian-male-cook-hotel-industry_437792-680.jpg"
+                                alt="">
+                        </div>
+                        <h5 class="mb-0 p-3">Full Name</h5>
+
+                        <div class="d-flex justify-content-center mt-3">
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial -->
+
+    <body>
+        <section id="testimonials">
+            <!--heading--->
+            <div class="testimonial-heading">
+                <span>Comments Section</span>
+                <h4>Customer Reviews</h4>
+            </div>
+            <!--testimonials-box-container------>
+            <div class="testimonial-box-container">
+                <!--BOX-1-------------->
+                <div class="testimonial-box">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>King</strong>
+                                <span>@king</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i><!--Empty star-->
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis?
+                            Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum
+                            aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                    </div>
+                </div>
+                <!--BOX-2-------------->
+                <div class="testimonial-box">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>Wood</strong>
+                                <span>@wood</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><!--Empty star-->
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis?
+                            Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum
+                            aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                    </div>
+                </div>
+                <!--BOX-3-------------->
+                <div class="testimonial-box">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>Queen</strong>
+                                <span>@queen</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i><!--Empty star-->
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis?
+                            Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum
+                            aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                    </div>
+                </div>
+                <!--BOX-4-------------->
+                <div class="testimonial-box">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong> BPS</strong>
+                                <span>@bps</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i><!--Empty star-->
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis?
+                            Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum
+                            aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row" style="margin-left: 50px;">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>Shastri Nagar, Jaipur</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>0909090909</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span>mail@info.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html" style="text-decoration: none;">
+                                        <h1 style="color: azure; text-decoration: none;">Restaurant
+                                        </h1>
+                                    </a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                        incididuntut consec tetur adipisicing
+                                        elit,Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about-us.html">about</a></li>
+                                    <li><a href="services.html">services</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="#">Expert Team</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="blog.html">Latest News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button><i class="fab fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2024, All Right Reserved.<a href="index.html">Restaurant</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="terms.html">Terms</a></li>
+                                    <li><a href="privacy.html">Privacy</a></li>
+                                    <li><a href="policy.html">Policy</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

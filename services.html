@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restoran - Bootstrap Restaurant Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="component/favicon.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        .containbox {
+            width: 100%;
+            height: 100%;
+            padding: 0px 8%;
+            margin-top: -90px;
+        }
+
+        .containbox>h1 {
+            text-align: center;
+            padding-top: 10%;
+            margin-bottom: 60px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .containbox>h1::after {
+            content: '';
+            background: #5c63bf;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .rowbox {
+            margin-left: 0px;
+            display: grid;
+            grid-template-columns: 300px 300px 300px 300px;
+            grid-gap: 30px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .rowbox {
+                margin-left: 10px;
+                display: grid;
+                grid-template-columns: 200px 200px;
+            }
+        }
+
+        /* @media only screen and (max-width: 1180px) {
+            .row {
+                margin-left: 20px;
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+            }
+        } */
+
+        .service {
+            text-align: center;
+            padding: 25px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            background: transparent;
+            box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+            transition: 0.5s;
+        }
+
+        .service i {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #6d74c9;
+        }
+
+        .service h2 {
+            font-weight: 500;
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+
+        .service:hover {
+            background: var(--primary);
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        .service:hover i {
+            color: #fff;
+        }
+
+        .service:hover h2 {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- spinner/loader -->
+    <!-- <div class="spinner">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <div>Loading...</div>
+    </div> -->
+
+    <!-- nav bar with hero image -->
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand"><a href="index.html" style="text-decoration: none; color: azure; ">Restaurant</a></div>
+            <nav class="nav">
+                <div class="nav-mobile"><a id="nav-toggle"><span></span></a></div>
+                <ul class="nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about-us.html">ABOUT</a></li>
+                    <li><a href="services.html" style="color: aquamarine;">SERVICES</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">SIGN IN</a></li>
+
+                    <li><a href="https://form.jotform.com/242713579193464">BOOK A TABLE</a></li>
+                </ul>
+        </div>
+        </nav>
+        </div>
+    </section>
+    <div class="carousel-inner"
+        style="background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(img/bg-hero.jpg); height: 500px;">
+        <div class="container text-center my-5 pt-5 pb-4">
+            <p class="display-3 text-white mb-3 animated slideInDown"
+                style=" margin-top: 100px; font-size: 50px; font-weight: 700;">
+                Our
+                Services</hp>
+
+        </div>
+
+    </div>
+    <div class="containbox">
+        <h1>Explore Our Services</h1>
+        <div class="rowbox">
+            <div class="service">
+                <i class="fa fa-calendar"></i>
+                <h2>Table Reservation</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa fa-motorcycle"></i>
+                <h2>Delivery Service</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa fa-truck"></i>
+                <h2>Catering</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa fa-tree"></i>
+                <h2>Outdoor Seating</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa fa-child"></i>
+                <h2>Kids Menu</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa fa-table"></i>
+                <h2>Buffet Service</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa fa-glass-cheers"></i>
+                <h2>Beverages/Bar Service</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa fa-lock"></i>
+                <h2>Private Dining</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa fa-shopping-cart"></i>
+                <h2>Online Ordering</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+                </p>
+            </div>
+
+            <div class="service">
+                <i class="fa fa-birthday-cake"></i>
+                <h2>Special Events/Parties</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa fa-headset"></i>
+                <h2>24-Hour Service</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+                </p>
+            </div>
+            <div class="service">
+                <i class="fa fa-leaf"></i>
+                <h2>Vegetarian/Vegan Options</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                    quae?
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row" style="margin-left: 50px;">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>Shastri Nagar, Jaipur</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>0909090909</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html" style="text-decoration: none;">
+                                    <h1 style="color: azure; text-decoration: none;">Restaurant
+                                    </h1>
+                                </a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                    incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+
+                                <a href="#" class="facebook-icon"><i class="fab fa-facebook-f facebook-bg"></i></a>
+
+                                <a href="#"><i class="fab fa-instagram" style=" background-color: #E1306C;"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">about</a></li>
+                                <li><a href="services.html">services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="blog.html">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024, All Right Reserved.<a href="index.html">Restaurant</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="terms.html">Terms</a></li>
+                                <li><a href="privacy.html">Privacy</a></li>
+                                <li><a href="policy.html">Policy</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+
+</html>

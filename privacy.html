@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Privacy Policy - [Restaurant Name]</title>
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Main Container */
+        .containerr {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in-out;
+            /* Animation added */
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: slideIn 0.5s ease-in-out;
+            /* Header animation */
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+            /* Color transition */
+        }
+
+        header h1:hover {
+            color: #0056b3;
+            /* Darker shade on hover */
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        /* Policy Section Styling */
+        .policy h2 {
+            font-size: 2rem;
+            color: #007bff;
+            margin: 20px 0 15px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            position: relative;
+        }
+
+        .policy h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            height: 3px;
+            width: 100%;
+            background: #e67e22;
+            transform: scaleX(0);
+            transition: transform 0.5s ease;
+        }
+
+        .policy h2:hover::after {
+            transform: scaleX(1);
+        }
+
+        .policy h3 {
+            font-size: 1.5rem;
+            color: #e67e22;
+            margin: 15px 0 10px;
+        }
+
+        .policy p {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 15px;
+            line-height: 1.8;
+            /* Increased line height for readability */
+        }
+
+        .policy ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .policy ul li {
+            margin-bottom: 5px;
+            transition: color 0.3s;
+            /* Color transition for list items */
+        }
+
+        .policy ul li:hover {
+            color: #e67e22;
+            /* Change color on hover */
+        }
+
+        /* Address Styling */
+        address {
+            font-style: normal;
+            color: #333;
+            line-height: 1.6;
+            margin-top: 20px;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            /* Decorative border for address */
+            background-color: #f9f9f9;
+            /* Light background for address */
+        }
+
+        /* Link Styles */
+        /* a {
+            color: #007bff;
+            text-decoration: underline;
+            transition: color 0.3s; /* Color transition 
+        }
+
+        a:hover {
+            color: #e67e22;
+            text-decoration: none;
+        } */
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            .policy h2 {
+                font-size: 1.5rem;
+            }
+
+            .policy h3 {
+                font-size: 1.2rem;
+            }
+
+            .policy p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand"><a href="index.html" style="text-decoration: none; color: azure; ">Restaurant</a></div>
+            <nav class="nav">
+                <div class="nav-mobile"><a id="nav-toggle"><span></span></a></div>
+                <ul class="nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about-us.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+
+
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">SIGN IN</a></li>
+
+                    <li><a href="https://form.jotform.com/242713579193464">BOOK A TABLE</a></li>
+                </ul>
+        </div>
+        </nav>
+        </div>
+    </section>
+    <div class="containerr">
+        <header>
+            <h1>Privacy Policy</h1>
+
+        </header>
+
+        <section class="policy">
+            <h2>1. Information We Collect</h2>
+            <p>We collect the following types of information:</p>
+
+            <h3>1.1 Personal Information</h3>
+            <p>When you interact with our website or restaurant, we may collect personal information, including but not
+                limited to:</p>
+            <ul>
+                <li>Name</li>
+                <li>Contact details (phone number, email address)</li>
+                <li>Payment information (credit card details, billing address)</li>
+                <li>Reservation and order details</li>
+                <li>Any other information you voluntarily provide, such as dietary preferences or food allergies</li>
+            </ul>
+
+            <h3>1.2 Non-Personal Information</h3>
+            <p>We may collect non-personal information, such as:</p>
+            <ul>
+                <li>Browser type and version</li>
+                <li>IP address</li>
+                <li>Pages visited on our website</li>
+                <li>Time and date of visit</li>
+                <li>Referring website</li>
+            </ul>
+
+            <h2>2. How We Use Your Information</h2>
+            <p>We may use your personal and non-personal information for the following purposes:</p>
+            <ul>
+                <li><strong>To Provide Our Services:</strong> To process your reservations, orders, and any requests you
+                    make via our website or at the restaurant.</li>
+                <li><strong>To Improve Our Services:</strong> To better understand your preferences and improve the
+                    customer experience at our restaurant.</li>
+                <li><strong>Marketing and Promotions:</strong> To send you promotional offers, updates, or newsletters
+                    (with your consent). You can opt-out of these communications at any time.</li>
+                <li><strong>Legal Obligations:</strong> To comply with legal requirements, such as tax and regulatory
+                    obligations.</li>
+                <li><strong>Customer Support:</strong> To address your questions, concerns, or feedback.</li>
+            </ul>
+
+            <h2>3. Cookies and Tracking Technologies</h2>
+            <p>We use cookies and similar tracking technologies to enhance your browsing experience on our website.
+                Cookies allow us to:</p>
+            <ul>
+                <li>Analyze website traffic and user behavior.</li>
+                <li>Save your preferences for future visits.</li>
+                <li>Track the effectiveness of our marketing campaigns.</li>
+            </ul>
+            <p>You can choose to disable cookies through your browser settings. However, some features of our website
+                may not function properly if cookies are disabled.</p>
+
+            <h2>4. Sharing Your Information</h2>
+            <p>We respect your privacy and will not share or sell your personal information to third parties, except
+                under the following circumstances:</p>
+            <ul>
+                <li><strong>Service Providers:</strong> We may share your information with trusted third-party service
+                    providers (e.g., payment processors, reservation platforms) to facilitate our services.</li>
+                <li><strong>Legal Requirements:</strong> We may disclose your information if required by law or in
+                    response to legal proceedings (e.g., subpoenas, court orders).</li>
+                <li><strong>Business Transfers:</strong> If we undergo a business transaction such as a merger,
+                    acquisition, or sale of assets, your personal information may be transferred as part of that
+                    transaction.</li>
+            </ul>
+
+            <h2>5. Data Security</h2>
+            <p>We implement strict security measures to protect your personal information from unauthorized access, use,
+                or disclosure. Our website uses SSL encryption to safeguard your data during transmission.</p>
+            <p>However, please be aware that no method of online transmission or storage is completely secure. While we
+                strive to protect your data, we cannot guarantee its absolute security.</p>
+
+            <h2>6. Data Retention</h2>
+            <p>We will retain your personal information for as long as necessary to fulfill the purposes outlined in
+                this Privacy Policy, unless a longer retention period is required by law.</p>
+
+            <h2>7. Your Rights</h2>
+            <p>You have the following rights regarding your personal data:</p>
+            <ul>
+                <li><strong>Access:</strong> You can request access to the personal information we hold about you.</li>
+                <li><strong>Correction:</strong> You can request that we correct any inaccurate or incomplete
+                    information.</li>
+                <li><strong>Deletion:</strong> You can request that we delete your personal information, subject to
+                    legal or business obligations.</li>
+                <li><strong>Opt-Out:</strong> You can opt-out of marketing communications by following the unsubscribe
+                    instructions in any email we send.</li>
+            </ul>
+            <p>To exercise any of these rights, please contact us at <a
+                    href="mailto:[Restaurant Email Address]">[Restaurant Email Address]</a>.</p>
+
+            <h2>8. Third-Party Links</h2>
+            <p>Our website may contain links to third-party websites (e.g., delivery partners, reservation platforms).
+                These websites have their own privacy policies, and we are not responsible for their content or
+                practices. We encourage you to read their policies before providing any personal information.</p>
+
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal
+                requirements. Any updates will be posted on this page with the date of the latest revision. By
+                continuing to use our website or services, you agree to the updated Privacy Policy.</p>
+
+            <h2>10. Contact Us</h2>
+            <p>If you have any questions or concerns about our Privacy Policy or how we handle your personal
+                information, please contact us:</p>
+            <address>
+                <strong>[Restaurant Name]</strong><br>
+                [Restaurant Address]<br>
+                Phone: [Restaurant Phone Number]<br>
+                Email: <a href="mailto:[Restaurant Email Address]">[Restaurant Email Address]</a>
+            </address>
+        </section>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row" style="margin-left: 50px;">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>Shastri Nagar, Jaipur</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>0909090909</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html" style="text-decoration: none;">
+                                    <h1 style="color: azure; text-decoration: none;">Restaurant
+                                    </h1>
+                                </a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod
+                                    tempor
+                                    incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">about</a></li>
+                                <li><a href="services.html">services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="blog.html">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024, All Right Reserved.<a href="index.html">Restaurant</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="terms.html">Terms</a></li>
+                                <li><a href="privacy.html">Privacy</a></li>
+                                <li><a href="policy.html">Policy</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
